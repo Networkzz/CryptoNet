@@ -9,7 +9,7 @@
     --main-color: #6E6AD9;
     --secondary-color: #BBB2EB;
     --tertiary-color: #CAC1FF;
-    --background-color: #E5E5E5;
+    --background-color: #FAFAFA;
     --font-color: #000000;
     padding: 0px;
 }
@@ -31,9 +31,7 @@ nav {
     background-color: var(--secondary-color);
 }
 nav img {
-    float: left;
-    margin-top: 30px;
-    margin-left: 30px;
+
 }
 nav a {
     font-size: 1.6em;
@@ -74,4 +72,80 @@ footer ul {
 }
 footer a:hover {
     color: #F7F7FA;
+}
+/*Login user*/
+.container-login-user {
+    border: 2px solid var(--main-color);
+    border-radius: 1.5em;
+    width: 65.8em;
+    height: 42.2em;
+    margin: 0 auto;
+    position: relative; 
+    top: 18.2em;
+    text-align: center;
+}
+.container-login-user h3 {
+    margin-top: 2.2em;
+    margin-bottom: 2em;
+    font-size: 2em;
+}
+.container-login-user input {
+    background-color: var(--tertiary-color);
+    text-align: center;
+    border: 0px;
+    padding: 0.4em 1.5em;
+}
+.container-login-user input, .container-login-user label, .container-login-user a {
+    margin: 14px;
+    font-size: 1.6em;
+}
+.container-login-user input[type=submit]{
+    background-color: var(--main-color);
+    padding: 0.38em 5.2em;
+}
+.container-login-user span {
+    font-size: 1.6em;
+}
+.container-login-user span + a {
+    color: var(--main-color);
+}
+/*Sign up user*/
+.container-signup {
+    border: 2px solid var(--main-color);
+    border-radius: 1.5em;
+    width: 65.8em;
+    height: 58.3em;
+    margin: 0 auto;
+    position: relative; 
+    top: 10.1em;
+    text-align: center;
+}
+.container-signup h3 {
+    margin-top: 2.2em;
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+.container-signup input {
+    background-color: var(--tertiary-color);
+    text-align: center;
+    border: 0px;
+    padding: 0.4em 1.5em;
+}
+.container-signup input, .container-signup label, .container-signup a,  .container-signup span, .container-signup p{
+    margin-bottom: 1.4em;
+    margin-top: 1.4em;
+    font-size: 1.6em;
+}
+.container-signup input[type=submit]{
+    background-color: var(--main-color);
+    padding: 0.38em 5.2em;
+}
+.container-signup label {
+    margin-bottom: 10em;
+}
+.container-signup span + a {
+    color: var(--main-color);
+}
+.container-signup input[type="checkbox"] {
+    background: red;
 }
