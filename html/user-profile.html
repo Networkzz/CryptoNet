@@ -9,13 +9,32 @@
 </head>
 <body>
     <nav>
-        <img src="/img/logo.png" alt="logo">
+        <a href="/index.html"><img src="/img/logo.png" alt="logo"></a>
         <div class="container-login">
             <a href="/html/login.html">Log in</a>
             <a href="/html/login.html">Sign up</a>
         </div>
     </nav>
     <main>
+        <div class="container-user-profile">
+            <h2>Account settings</h2>
+            <p>Profile picture</p>
+            <div class="container-profile-picture">
+                <span class="iconify" data-icon="carbon:user-avatar-filled" style="color: #6e6ad9; font-size: 7rem;"></span>
+                <button>Edit picture</button>
+            </div>
+            <form>
+                <label for="username">Username</label><br>
+                <input type="text" name="username" id="username" placeholder="Username"><br>
+                <label for="email">Email adress</label><br>
+                <input type="email" name="email" id="email" placeholder="Email Adress"><br>
+                <input type="submit" value="Save"><br>  
+            </form>
+            <div class="container-password">
+                <p>Password</p>
+                <span>Set a unique password to protect your account</span><button>Change password</button>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="container-footer">

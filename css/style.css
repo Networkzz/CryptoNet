@@ -2,6 +2,7 @@
 'Syne', sans-serif;
 'Source Sans Pro', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&family=Syne&display=swap');
+/*General settings*/
 :root{
     font-family: 'Syne', sans-serif;
     font-weight: 700;
@@ -11,7 +12,6 @@
     --tertiary-color: #CAC1FF;
     --background-color: #FAFAFA;
     --font-color: #000000;
-    padding: 0px;
 }
 *{
     padding: 0px;
@@ -31,7 +31,11 @@ nav {
     background-color: var(--secondary-color);
 }
 nav img {
-
+    width: 200px;
+    height: 100px;
+    margin-left: 1em;
+    margin-top: 1em;
+    object-fit: cover;
 }
 nav a {
     font-size: 1.6em;
@@ -146,6 +150,98 @@ footer a:hover {
 .container-signup span + a {
     color: var(--main-color);
 }
-.container-signup input[type="checkbox"] {
-    background: red;
+/*Contact*/
+.container-contact {
+    border: 2px solid var(--main-color);
+    border-radius: 1.5em;
+    width: 65.8em;
+    height: 66.2em;
+    margin: 0 auto;
+    position: relative; 
+    top: 6em;
+    text-align: center;
+}
+.container-contact h3 {
+    margin-top: 2.2em;
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+.container-contact input {
+    background-color: var(--tertiary-color);
+    text-align: center;
+    border: 0px;
+    padding: 0.4em 1.5em;
+}
+.container-contact input, .container-contact label, .container-contact a,  .container-contact span, .container-contact p,.container-contact textarea{
+    margin-bottom: 1.4em;
+    margin-top: 1.4em;
+    font-size: 1.6em;
+}
+.container-contact textarea {
+    background-color: var(--tertiary-color);
+    text-align: center;
+}
+.container-contact input[type=submit]{
+    background-color: var(--main-color);
+    padding: 0.5em 4em;
+}
+/*User profile*/
+.container-user-profile {
+    border: 2px solid var(--main-color);
+    border-radius: 1.5em;
+    width: 65.8em;
+    height: 66.2em;
+    margin: 0 auto;
+    position: relative; 
+    top: 6em;
+}
+.container-user-profile h2 {
+    margin: 2em;
+    font-size: 2em;
+}
+.container-user-profile input {
+    background-color: var(--tertiary-color);
+    text-align: center;
+    border: 0px;
+    padding: 0.4em 1.5em;
+}
+.container-user-profile input, .container-user-profile label, .container-user-profile a,  .container-user-profile span, .container-user-profile p{
+    margin: 2rem;
+    font-size: 1.6em;
+}
+.container-user-profile input[type=submit]{
+    background-color: var(--main-color);
+    padding: 0.4em 10.9rem;
+}
+.container-profile-picture {
+    display: flex;
+    margin-left: 3.5rem;
+    margin-bottom: 2em;
+    align-items: center;
+}
+.container-profile-picture button {
+    margin-left: 2em;
+    background-color: var(--tertiary-color);
+    border-style: none;
+    width: 10rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    text-align: center;
+}
+.container-password {
+    border-top: 0.1rem solid #000000;
+}
+.container-password button{
+    float: right;
+    margin-right: 1.8rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: 0.8rem;
+    background-color: var(--tertiary-color);
+}
+.container-password p {
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+    color: red;
 }
