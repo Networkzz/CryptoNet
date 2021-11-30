@@ -35,7 +35,7 @@ nav img {
     width: 200px;
     height: 100px;
     margin-left: 1rem;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     object-fit: cover;
 }
 nav a {
@@ -44,9 +44,11 @@ nav a {
     margin-left: 1rem;
 }
 .container-login {
+    height: 5rem;
     float: right;
     margin-right: 5rem;
-    line-height: 11rem;
+    margin-top: 3rem;
+    line-height: 5rem;
 }
 /*Button sign up*/
 nav a:nth-child(2){
@@ -83,7 +85,7 @@ footer a:hover {
 .container-login-user {
     border: 2px solid var(--main-color);
     border-radius: 1.5rem;
-    width: 50rem;
+    width: 40rem;
     height: 35rem;
     margin: 0 auto;
     position: relative; 
