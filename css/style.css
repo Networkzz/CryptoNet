@@ -89,6 +89,13 @@ footer a:hover {
     font-size: 1.6rem;
 }
 .container-tokens table {
+    border-collapse: collapse;
+}
+.container-tokens table tr {
+    border-bottom: 1px solid #D2CACA;
+    transform: rotate(-0.05deg);
+}
+.container-tokens table {
     margin-top: 3rem;
 }
 .container-tokens th {
