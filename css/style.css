@@ -111,6 +111,7 @@ footer a:hover {
     justify-content: center;
     justify-items: center;
     font-size: 1.6rem;
+    overflow-x:auto;
 }
 .container-tokens table {
     border-collapse: collapse;
