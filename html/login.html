@@ -24,10 +24,13 @@
                 <input type="email" name="email" id="email" placeholder="Email Adress..." required>
                 <label for="password">Password</label>
                 <input type="password" name="password" id="password" placeholder="Password..." required>
-                <a href="">Forgot password?</a>
-                <input type="submit" value="Log in">
+                <a href="">Forgot password?</a><br>
+                <span class="captcha"></span>
+                <input class="captcha-input" type="text" placeholder="Introduce CAPTCHA">
+                <span class="captcha-text"></span>
+                <input type="submit" class="captcha-button"></button>
             </form>
-            <span>New to Cryptonet? <a href="/html/signup.html">Sign up</a></span>   
+            <span>New to Cryptonet?<a href="/html/signup.html">Sign up</a></span>   
         </div>
     </main>
     <footer>
@@ -49,6 +52,8 @@
             </ul>
         </div>
     </footer>
+    <script src="/js/validate.js"></script>
+    <script src="/js/captcha.js"></script>
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+/*General settings*/
+:root{
+    font-family: 'Alfa Slab One', cursive, sans-serif;
+    font-weight: 700;
+    font-size: 62.5%; /* 10px */
+    --main-color: #6E6AD9;
+    --secondary-color: #BBB2EB;
+    --tertiary-color: #CAC1FF;
+    --background-color: #FAFAFA;
+    --font-color: #000000;
+    --hover-color: #F7F7FA;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    font-style: var(--font-color);
+}
+body {
+    background: linear-gradient(90deg, rgba(110,106,217,1) 0%, rgba(187,178,235,1) 35%, rgba(202,193,255,1) 100%);
+    font-size: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+body h1 {
+    text-align: center;
+    margin-top: 300px;
+    color: #000000;
+}
+body button {
+    text-align: center;
+    margin: 0 auto;
+    background: linear-gradient(to left, #F2709C, #FF9472);
+    padding: 1rem;
+    border-style: none;
+    margin: 1rem;
+}
+body button:hover {
+    background: linear-gradient(to right, #F2709C, #FF9472);
+}
+#second-button {
+    display: none;
+}
+#third-button {
+    display: none;
+}
+#last-button {
+    display: none;
+}
+body a {
+    color: #000000;
+}
+@media (max-width: 800px){
+    body h1 {
+        font-size: 7rem;
+    }
+    body a {
+        font-size: 7rem;
+    }
+}
