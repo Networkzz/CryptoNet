@@ -2,7 +2,15 @@
 const captcha = document.querySelector(".captcha"),
 captchaInput = document.querySelector(".captcha-input"),
 captchaText = document.querySelector(".captcha-text"),
-captchaButton = document.querySelector(".captcha-button");
+captchaButton = document.querySelector(".captcha-button"),
+buttonContact = document.querySelector('.closebtn'),
+messagePopUp = document.querySelector('.alert'),
+email = document.getElementById('email'),
+subject = document.getElementById('subject'),
+messageArea = document.getElementById('message');
+
+//Bloquea que no se pueda copiar el captcha (obviamente se puede cancelar desde el navegador, pero al menos añade algo de seguridad)
+captcha.oncopy = function(){return false};
 
 //Array de todos los caracteres
 let allCharacters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O',
@@ -20,7 +28,7 @@ function getCaptcha(){
 //Llamada a la funcion cada vez que se entre en la pagina para generar un captcha aleatorio
 getCaptcha();
 //Funcion que atribuye al boton un evento que comprueba si el captcha coincide con el input del usuario.
-captchaButton.addEventListener("click", e=> {
+captchaButton.addEventListener("click", (e) => {
     e.preventDefault();
     captchaText.style.display = "block";
     //El captcha esta dividido por espacios, asi elimina los espacios y es mas facil de trabajar
@@ -29,9 +37,18 @@ captchaButton.addEventListener("click", e=> {
     if(userInput == captcha.innerText){
         captchaText.style.color = "#4db2ec";
         captchaText.innerText = "You don't appear to be a robot.";
+        //PopUp para la pagina de contacto
+        if(subject.value.length >= 10 && messageArea.value.length > 40)
+            messagePopUp.style.display = "block";
+        else
+            alert('Subject need to be longer than 10 characters and message longer than 40')
     }
     else{
         captchaText.style.color = "#ff0000";
         captchaText.innerText = "Captcha not matched. Please try again!";
     }
 });
+
+buttonContact.addEventListener('click', (e) => {
+    messagePopUp.style.display = 'none';
+})

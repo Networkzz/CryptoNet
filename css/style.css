@@ -217,7 +217,7 @@ main h2 {
     border: 2px solid var(--main-color);
     border-radius: 1.5rem;
     width: 40rem;
-    height: 44rem;
+    height: 48rem;
     margin: 0 auto;
     position: relative; 
     top: 18.2rem;
@@ -230,8 +230,8 @@ main h2 {
     margin: 0 auto;
 }
 .container-login-user h3 {
-    margin-top: 2.2rem;
-    margin-bottom: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
     font-size: 2rem;
 }
 .container-login-user input {
@@ -240,16 +240,30 @@ main h2 {
     border: 0px;
     padding: 0.4em 1.5em;
 }
-.container-login-user input, .container-login-user label, .container-login-user a {
-    margin: 1.4rem;
+.container-login-user input, .container-login-user label, .container-login-user a, .container-login-user p, .container-login-user span{
+    padding: 1rem;
     font-size: 1.6rem;
+    margin: 0 auto;
 }
-.container-login-user input[type=submit]{
+.container-login-user input, .container-login-user label{
+    display: block;
+}
+.container-login-user button[type=submit]{
     background-color: var(--main-color);
-    padding: 0.38em 5.2em;
+    padding: 1rem 5rem;
+    border-style: none;
+    margin-top: 1rem;
+    display: block;
+    margin: 0 auto;
 }
-.container-login-user span {
-    font-size: 1.6rem;
+.container-login-user .captcha {
+    display: block;
+    width: 20rem;
+    margin-top: 1rem;
+}
+.container-login-user .captcha-input {
+    margin-top:2rem;
+    margin-bottom: 0.5rem;
 }
 .container-login-user a {
     color: var(--main-color);
@@ -257,12 +271,16 @@ main h2 {
 .container-login-user a:hover {
     color: #9b8b8b;
 }
+.captcha {
+    color: rgb(0, 70, 70);
+    background-color: var(--main-color);
+}
 /*Sign up user*/
 .container-signup {
     border: 2px solid var(--main-color);
     border-radius: 1.5rem;
     width: 45rem;
-    height: 62rem;
+    height: 64rem;
     margin: 0 auto;
     position: relative; 
     top: 10rem;
@@ -271,7 +289,7 @@ main h2 {
     flex-direction: column;
 }
 .container-signup form {
-    max-width: 24.5rem;
+    max-width: 30rem;
     margin: 0 auto;
 }
 .container-signup h3 {
@@ -286,17 +304,35 @@ main h2 {
     padding: 0.4em 1.5em;
 }
 .container-signup input, .container-signup label, .container-signup a, .container-signup p, .container-signup span{
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+    padding: 1rem;
     font-size: 1.6rem;
+    margin: 0 auto;
+}
+.container-signup input, .container-signup label{
+    display: block;
 }
 .container-signup button[type=submit]{
     background-color: var(--main-color);
     padding: 1rem 5rem;
     border-style: none;
+    margin-top: 1rem;
+    display: block;
+    margin: 0 auto;
 }
-.container-signup label {
-    margin-bottom: 10rem;
+.container-signup input[type=checkbox]{
+    display: initial;
+}
+.container-signup .captcha {
+    display: block;
+    width: 20rem;
+    margin-top: 1rem;
+}
+.container-signup input[name="confpassword"] {
+    margin-bottom: 2rem;
+}
+.container-signup .captcha-input {
+    margin-top:2rem;
+    margin-bottom: 0.5rem;
 }
 .container-signup span a {
     color: var(--main-color);
@@ -310,73 +346,101 @@ main h2 {
 }
 /*Contact*/
 .container-contact {
-    border: 0.2rem solid var(--main-color);
+    border: 2px solid var(--main-color);
     border-radius: 1.5rem;
-    width: 46rem;
-    height: 61rem;
+    width: 45rem;
+    height: 70rem;
     margin: 0 auto;
     position: relative; 
-    top: 11rem;
+    top: 8rem;
     text-align: center;
     display: flex;
     flex-direction: column;
 }
 .container-contact form {
-    max-width: 40rem;
+    max-width: 45rem;
     margin: 0 auto;
 }
 .container-contact h3 {
-    margin-top: 2.2rem;
-    margin-bottom: 2.2rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
     font-size: 2rem;
 }
 .container-contact input {
     background-color: var(--tertiary-color);
     text-align: center;
     border: 0px;
-    padding: 0.4em 5.4em;
+    width: 38rem;
 }
-.container-contact input, .container-contact label, .container-contact a,  .container-contact span, .container-contact p{
-    margin-bottom: 1.4em;
-    margin-top: 1.4em;
-    font-size: 1.6em;
+.container-contact input, .container-contact label, .container-contact a, .container-contact span{
+    padding: 1rem;
+    font-size: 1.6rem;
+    margin: 0 auto;
+}
+.container-contact input, .container-contact label{
+    display: block;
+}
+.container-contact button[type=submit]{
+    background-color: var(--main-color);
+    padding: 1rem 5rem;
+    border-style: none;
+    margin-top: 1rem;
+    display: block;
+    margin: 0 auto;
+}
+.container-contact .captcha {
+    display: block;
+    width: 20rem;
+    margin-top: 1rem;
+}
+.container-contact .captcha-input {
+    margin-top:2rem;
+    margin-bottom: 0.5rem;
 }
 .container-contact textarea {
     background-color: var(--tertiary-color);
     text-align: center;
-    margin-top: 1.4em;
-    width: 37rem;
-}
-.container-contact input[type=submit]{
-    background-color: var(--main-color);
-    padding: 0.5em 2em;
+    margin: 0 auto;
+    display: block;
+    border: none;
 }
 /*Pop up message contact*/
 .alert {
-    flex-direction: none;
-  padding: 20px;
-  width: 200px;
-  background-color: #f44336; /* Red */
-  color: white;
-  margin-bottom: 15px;
-  position: absolute;
-  margin-left: 100px;
-  margin-top: 150px;
-  z-index: 1000;
+    padding: 20px;
+    width: 40rem;
+    height: 20rem;
+    background-color: var(--main-color);
+    color: white;
+    position: absolute;
+    z-index: 1000;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-top: 18rem;
+    display: none;
+}
+.alert p {
+    font-size: 1.6rem;
+}
+.alert p:first-of-type {
+    margin-top: 5rem;
 }
 /* The close button */
 .closebtn {
-  margin-left: 15px;
-  color: white;
-  float: right;
-  font-size: 22px;
-  line-height: 20px;
-  cursor: pointer;
-  transition: 0.3s;
+    position: absolute;
+    color: white;
+    margin-right: 5px;
+    right: 0;
+    top: 0;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
 }
-/* When moving the mouse over the close button */
 .closebtn:hover {
-  color: black;
+    color: black;
 }
 /*User profile*/
 .container-user-profile {
