@@ -1,13 +1,14 @@
 //Obteniendo los elementos del HTML
-const mainButton = document.getElementById('main-button')
-secondButton = document.getElementById('second-button'),
-thirdButton = document.getElementById('third-button'),
-forthButton = document.getElementById('forth-button'),
-fifthButton = document.getElementById('fifth-button'),
-sixthButton = document.getElementById('sixth-button'),
-lastButton = document.getElementById('last-button');
+const mainButton = document.getElementById('main-button') //boton primario
+secondButton = document.getElementById('second-button'), //boton secundario
+thirdButton = document.getElementById('third-button'), //boton tercero
+forthButton = document.getElementById('forth-button'), // boton cuarto
+fifthButton = document.getElementById('fifth-button'), //boton quinto
+sixthButton = document.getElementById('sixth-button'), //boton sexto
+lastButton = document.getElementById('last-button'); //boton ultimo (salida)
 
-//Funciones que añaden funcionalidad a los botones de la pagina 404
+/*Funciones que añaden funcionalidad a los botones de la pagina 404, todos estan display:hidden, este evento hace que vayan
+apareciendo segun va pulsandolos el usuario*/
 mainButton.addEventListener('click',(e) => {
     secondButton.style.display = 'block';
 })

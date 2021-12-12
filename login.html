@@ -11,10 +11,20 @@
 <body>
     <nav>
         <a href="/index.html"><img src="/img/logo.png" alt="logo"></a>
+        <a class="icon" >&#9776;</a>
         <div class="container-login">
-            <a href="/html/login.html">Log in</a>
-            <a href="/html/signup.html">Sign up</a>
+            <a href="login.html" target="_blank">Log in</a>
+            <a href="signup.html" target="_blank">Sign up</a>
         </div>
+        <ul>
+            <li></li>
+            <li><a class="nav-link" href="FAQ.html">FAQ</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
+            <li><a class="nav-link" href="error404.html">Twitter</a></li>
+            <li><a class="nav-link" href="error404.html">Linkedin</a></li>
+            <li><a class="nav-link" href="error404.html">Facebook</a></li>
+            <li><a class="nav-link" href="https://polygon.technology/">Polygon</a></li>
+        </ul>
     </nav>
     <main>
         <div class="container-login-user">
@@ -28,7 +38,7 @@
                 <span class="captcha"></span>
                 <input class="captcha-input" type="text" placeholder="Introduce CAPTCHA">
                 <span class="captcha-text"></span>
-                <button type="submit" class="captcha-button">Log in</button>
+                <button class="captcha-button-login" type="submit" >Log in</button>
             </form>
             <span>New to Cryptonet?<a href="/html/signup.html">Sign up</a></span>   
         </div>
@@ -37,23 +47,23 @@
         <div class="container-footer">
             <ul>
                 <li>About us:</li>
-                <li><a href="/html/contact.html">Contact</a></li>
-                <li><a href="/html/FAQ.html">FAQ</a></li>
+                <li><a class="link-footer" href="contact.html">Contact</a></li>
+                <li><a class="link-footer" href="FAQ.html">FAQ</a></li>
             </ul>
             <ul>
                 <li>Social media:</li>
-                <li><a href="">Twitter</a></li>
-                <li><a href="">Facebook</a></li>
-                <li><a href="">Linkedin</a></li>
+                <li><a class="link-footer" href="error404.html" target="_blank">Twitter</a></li>
+                <li><a class="link-footer" href="error404.html" target="_blank">Facebook</a></li>
+                <li><a class="link-footer" href="error404.html" target="_blank">Linkedin</a></li>
             </ul>
             <ul>
                 <li>Matic blockchain:</li>
-                <li><a href="https://polygon.technology/" target="blank">Polygon</a></li>
+                <li><a class="link-footer" href="https://polygon.technology/" target="blank">Polygon</a></li>
             </ul>
         </div>
     </footer>
-    <script src="/js/validate.js"></script>
-    <script src="/js/captcha.js"></script>
+    <script src="/js/navBar.js"></script>
+    <script src="/js/login.js"></script>
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
 </body>
 </html>

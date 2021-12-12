@@ -1,6 +1,8 @@
+//Variables para acceder al HTML
 const buttons = document.querySelectorAll("[data-carousel-button]")
-
+//foreach que permite recorrer el carousel de imagenes
 buttons.forEach(button => {
+    //evento para pasar a la siguiente imagen
     button.addEventListener("click", () => {
     const offset = button.dataset.carouselButton === "next" ? 1 : -1
     const slides = button
