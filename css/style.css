@@ -14,23 +14,6 @@
     --font-color: #000000;
     --hover-color: #F7F7FA;
 }
-/*Light mode*/
-[data-theme="light"]{
-    --main-color: #6E6AD9;
-    --secondary-color: #BBB2EB;
-    --tertiary-color: #CAC1FF;
-    --background-color: #FAFAFA;
-    --font-color: #000000;
-    --hover-color: #F7F7FA;
-}
-[data-theme="dark"]{
-    --main-color-dark: #100F10;
-    --secondary-color-dark: #1B1B1B;
-    --tertiary-color-dark: #242424;
-    --background-color: #FAFAFA;
-    --font-color-dark: rgba(#fff, 0.96);
-    --hover-color-dark: #F7F7FA;
-}
 *{
     padding: 0px;
     margin: 0px;
@@ -95,16 +78,11 @@ nav .icon{
         display: block;
     }
     main table {
-<<<<<<< HEAD
         font-size: 1.4rem;
-=======
-        font-size: 1rem;
->>>>>>> 250730eb67eed65c58deb3229ce5e5264c4ce4d2
     }
     main table img {
         width: 100%;
     }
-<<<<<<< HEAD
 }
 .container-login {
     height: 5rem;
@@ -113,16 +91,6 @@ nav .icon{
     line-height: 6rem;
     font-size: 1.6rem;
 }
-=======
-}
-.container-login {
-    height: 5rem;
-    float: right;
-    margin-right: 5rem;
-    line-height: 6rem;
-    font-size: 1.6rem;
-}
->>>>>>> 250730eb67eed65c58deb3229ce5e5264c4ce4d2
 .container-login a:nth-child(2){
     padding: 0.4rem 1rem;
     background-color: var(--main-color);

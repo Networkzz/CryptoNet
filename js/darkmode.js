@@ -25,11 +25,6 @@ darkMode.addEventListener('click', (e) => {
         navLink[i].style.color = '#ffffff';
     }
 });
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 250730eb67eed65c58deb3229ce5e5264c4ce4d2
 //evento para activar el modo claro, vuelve al estado default
 lightMode.addEventListener('click', (e) => {
     main.style.background = ""
@@ -38,7 +33,6 @@ lightMode.addEventListener('click', (e) => {
     nav.style.color = '';
     footer.style.background = '';
     footer.style.color = '';
-<<<<<<< HEAD
     loginA.style.color = '';
     signupA.style.color = '';
     //for para recorrer todas las clases
@@ -46,11 +40,4 @@ lightMode.addEventListener('click', (e) => {
         footerLink[i].style.color = '';
         navLink[i].style.color = '';
     }
-=======
-    //for para recorrer todas las clases
-    for(let i = 0; i <= footerLink.length; i++){
-        footerLink[i].style.color = '';
-    }
-    footerLink.style.color = '';
->>>>>>> 250730eb67eed65c58deb3229ce5e5264c4ce4d2
 })
