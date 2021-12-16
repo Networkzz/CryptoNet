@@ -44,8 +44,6 @@ captchaButton.addEventListener("click", (e) => {
     const emailValue = email.value.trim();
     const passwordValue = password.value.trim();
     const confpasswordValue = confpassword.value.trim();
-    //const subjectValue = subject.value.trim();
-    //const messageValue = message.value.trim();
 
     captchaText.style.display = "block";
     //El captcha esta dividido por espacios, asi elimina los espacios y es mas facil de trabajar
@@ -56,11 +54,6 @@ captchaButton.addEventListener("click", (e) => {
         captchaText.innerText = "You don't appear to be a robot.";
         captchaInput.style.border = '2px solid #93FA60';
         success = success +1;
-        //PopUp para la pagina de contacto, comprueba longitud tanto del subject como del message.
-        /*if(subject.value.length >= 10 && messageArea.value.length > 40)
-            messagePopUp.style.display = "block";
-        else
-            alert('Subject need to be longer than 10 characters and message longer than 40');*/
     }
     //Cambia el color del input, genera texto html
     else{

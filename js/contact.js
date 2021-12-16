@@ -67,7 +67,7 @@ captchaButtonContact.addEventListener("click", (e) => {
         email.style.border = '2px solid #ff0000';
     }
     //comprueba si el subject es mayor a 10 y menor a 35, ademas cambia estilo del input
-    if(subjectValue.length >= 10 && subject.length <= 35){
+    if(subjectValue.length >= 10 && subjectValue.length <= 35){
         subject.style.border = '2px solid #93FA60';
         success = success +1;
     }
