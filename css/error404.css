@@ -16,7 +16,6 @@
     margin: 0px;
     box-sizing: border-box;
     list-style: none;
-    font-style: var(--font-color);
 }
 body {
     background: linear-gradient(90deg, rgba(110,106,217,1) 0%, rgba(187,178,235,1) 35%, rgba(202,193,255,1) 100%);
